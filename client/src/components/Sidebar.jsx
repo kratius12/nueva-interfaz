@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../assets/react.svg";
+// import logo from "../assets/react.svg";
 import { v } from "../styles/Variables";
 import {
   AiOutlineLeft,
@@ -27,9 +27,9 @@ export function Sidebar({ sidebarOpen, setSidebarOpen }) {
       </button>
       <div className="Logocontent">
         <div className="imgcontent">
-          <img src={logo} />
+          {/* <img src={logo} /> */}
         </div>
-        <h2>codigo369</h2>
+        <h3>CONSTRU-TECH</h3>
       </div>
       {linksArray.map(({ icon, label, to }) => (
         <div className="LinkContainer" key={label}>

@@ -5,7 +5,7 @@ import { CreateUsuarioRequest,
         GetUsuariosRequest,
         DeleteUsuarioRequest,
         ToggleUsuarioStatusRequest
-} from "../api/Usuarios.api";
+} from "../../api/Usuarios.api";
 import { UsuarioContext } from "./UsuariosContext";
 
 

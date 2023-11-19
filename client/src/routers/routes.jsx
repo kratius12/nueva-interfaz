@@ -18,6 +18,9 @@ import { ProveedorContextProvider } from '../context/proveedores/ProveedorProvid
 import { ClientContextProvider } from "../context/clientes/ClientesProvider";
 import { CompraContextProvider } from '../context/compras/ComprasProvider'
 import { RolContextProvider } from "../context/roles/RolesProvider";
+import { UsuarioContextProvider } from "../context/usuarios/UsuariosProvider";
+import UsuariosPage from '../pages/usuarios/UsuariosPage'
+// import UsuariosForm from '../pages/usuarios/UsuariosForm'
 // import { UsuarioContextProvider } from "./context/UsuariosProvider";
 import ProveedoresPage from '../pages/proveedores/ProveedorPage'
 import ProveedoresForm from "../pages/proveedores/ProveedoresForm";
@@ -100,6 +103,11 @@ export function MyRoutes() {
                 <Route path="/editarRol/:id" element={<RolesForm/>} />
               </Routes>
             </RolContextProvider>  
+            <UsuarioContextProvider>
+              <Routes>
+                <Route path="/usuarios" element={<UsuariosPage/>}></Route>
+              </Routes>
+            </UsuarioContextProvider>
     </>
 
   );

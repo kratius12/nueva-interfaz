@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import UsuarioTable  from "../components/UsuariosTable"
-import { useUsuario } from "../context/UsuariosProvider";
-import TableInfo from "../components/TableInfo";
+import { useUsuario } from "../../context/usuarios/UsuariosProvider";
+import TableInfo from "../../components/TableInfo";
 function UsuariosPage() {
 
     const dataHeader = [
